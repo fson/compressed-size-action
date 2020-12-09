@@ -108,6 +108,7 @@ async function run(octokit, context, token) {
 	console.log(cwd);
 	console.log('oldSizes', oldSizes);
 	console.log('newSizes', newSizes);
+	console.log('diff', diff);
 	endGroup();
 
 	startGroup(`Size Differences:`);
