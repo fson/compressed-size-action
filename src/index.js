@@ -103,6 +103,8 @@ async function run(octokit, context, token) {
 	const oldSizes = await plugin.readFromDisk(cwd);
 
 	const diff = await plugin.getDiff(oldSizes, newSizes);
+	console.log('oldSizes', oldSizes);
+	console.log('newSizes', newSizes);
 
 	startGroup(`Size Differences:`);
 	const cliText = await plugin.printSizes(diff);
